@@ -7,8 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello word <%= user.prenom + " " + user.nom %></h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perferendis earum ab quam? Veritatis praesentium dicta, cum tempore sit, numquam impedit sunt sapiente, dignissimos eius eos quas repudiandae voluptatum et.</p>
+    <h1>Mes Todos</h1>
+    <a href="/ajouter">Ajouter une tache</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>deadline</th>
+                <th>priorite</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>faire le commit</td>
+                <td>27/05/2026 à 13h</td>
+                <td>Haute</td>
+                <td>
+                    <a href="/modifier/">Modifier</a>
+                    <a href="/mdifier/">Supprimer</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
 </body>
 </html>

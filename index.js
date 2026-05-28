@@ -17,6 +17,17 @@ app.get('/', (req, res) => {
   res.render("home",{"user": user})
 })
 
+//route le formulaire pour creer une tache
+app.get("/ajouter",(req,rep)=>{
+    rep.render("ajouter.ejs")
+})
+//route qui reçoit les donnee du formulaire
+app.post("/ajouter",(req,res)=>{
+    console.log(req)
+})
+
+app.use(express.urlencoded({extended: true}))
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
